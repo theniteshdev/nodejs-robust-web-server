@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Contact — Learn In Depth</title>
+    <link rel="stylesheet" href="/styles/contact.css">
+</head>
+
+<body>
+    <main style="max-width:640px;margin:3rem auto;padding:1rem;font-family:Inter,system-ui,Arial;color:#0b1220;">
+        <h1>Contact</h1>
+        <p style="color:#334155">Reach out for mentoring, workshops, or questions about study plans.</p>
+
+        <form id="contactForm" style="display:grid;gap:0.5rem;margin-top:1rem">
+            <label style="display:block"><small>Name</small><input name="name" required
+                    style="width:100%;padding:0.5rem;border-radius:6px;border:1px solid #e2e8f0"></label>
+            <label style="display:block"><small>Email</small><input type="email" name="email" required
+                    style="width:100%;padding:0.5rem;border-radius:6px;border:1px solid #e2e8f0"></label>
+            <label style="display:block"><small>Message</small><textarea name="message" rows="5"
+                    style="width:100%;padding:0.5rem;border-radius:6px;border:1px solid #e2e8f0"></textarea></label>
+            <div>
+                <button type="submit"
+                    style="padding:0.5rem 0.75rem;background:#0ea5a3;border:none;border-radius:8px;color:white">Send</button>
+                <span id="status" style="margin-left:0.75rem;color:#64748b"></span>
+            </div>
+        </form>
+
+        <p style="margin-top:1.25rem"><a href="/pages/about.html" style="text-decoration:none;color:#0f172a">← Back to
+                About</a></p>
+
+        <footer style="margin-top:2rem;color:#64748b;font-size:0.9rem">© <span id="year">2026</span></footer>
+    </main>
+    <script src="/script/contact.js" defer></script>
+</body>
+
+</html>

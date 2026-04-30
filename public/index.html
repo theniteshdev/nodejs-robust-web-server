@@ -1,128 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Robust — Modern Node.js Landing</title>
-    <meta name="description" content="A clean, responsive landing page served by a small Node.js static server.">
-    <link rel="stylesheet" href="/styles/main.css">
+    <title>Learn In Depth</title>
+    <meta name="description"
+        content="About learning deeply — resources, study plans, and services to help you master topics.">
+    <link rel="stylesheet" href="/styles/about.css">
 </head>
 
 <body>
-    <header class="site-header">
-        <div class="container">
-            <a class="brand" href="/">Robust</a>
-            <nav class="nav">
-                <a href="/pages/about.html">About</a>
-                <a href="/pages/docs.html">Docs</a>
-                <a href="/pages/blog/index.html">Blog</a>
-                <a href="#contact" class="cta">Get Started</a>
-            </nav>
-        </div>
-    </header>
+    <main style="max-width:720px;margin:6rem auto;padding:1rem;font-family:Inter,system-ui,Arial;color:#0b1220;">
+        <h1 style="margin:0 0 0.5rem;">Learn Things In Depth</h1>
+        <p style="color:#334155;margin-top:0;">Focused resources, study plans and mentoring to help you gain deep
+            understanding.</p>
 
-    <main>
-        <section class="hero">
-            <div class="container hero-inner">
-                <div class="hero-copy">
-                    <h1 class="title">Build fast, reliable Node.js sites</h1>
-                    <p class="subtitle">A minimal, robust server and a modern responsive landing page — no images
-                        required.</p>
-                    <p>
-                        <a class="btn primary" href="#contact">Start Free</a>
-                        <a class="btn ghost" href="#features">Learn More</a>
-                    </p>
-                </div>
+        <nav style="margin:1.5rem 0;display:flex;gap:0.5rem;">
+            <a href="/pages/about.html"
+                style="text-decoration:none;padding:0.5rem 0.75rem;background:#eef2ff;border-radius:8px;color:#1e293b">About</a>
+            <a href="/pages/services.html"
+                style="text-decoration:none;padding:0.5rem 0.75rem;border-radius:8px;background:#f1f5f9;color:#0f172a">Services</a>
+            <a href="/pages/contact.html"
+                style="text-decoration:none;padding:0.5rem 0.75rem;border-radius:8px;background:#e6fffa;color:#0f172a">Contact</a>
+        </nav>
 
-                <div class="hero-art" aria-hidden="true">
-                    <!-- Decorative SVG wave -->
-                    <svg viewBox="0 0 600 400" preserveAspectRatio="none" class="wave">
-                        <defs>
-                            <linearGradient id="g" x1="0" x2="1">
-                                <stop offset="0%" stop-color="#6EE7B7" />
-                                <stop offset="100%" stop-color="#3B82F6" />
-                            </linearGradient>
-                        </defs>
-                        <path d="M0,200 C150,300 450,100 600,200 L600,400 L0,400 Z" fill="url(#g)" opacity="0.9" />
-                    </svg>
-                </div>
-            </div>
+        <section>
+            <h2 style="margin-top:1.25rem;">Quick entry</h2>
+            <p style="color:#334155;">Use the links above to visit the About page (guides & plans), Services (mentoring
+                & workshops), or Contact to reach out.</p>
         </section>
 
-        <section id="features" class="section container">
-            <h2 class="section-title">Features</h2>
-            <div class="grid">
-                <article class="card">
-                    <h3>Static-first</h3>
-                    <p>Serve fast static assets from a tiny Node.js server with sensible defaults.</p>
-                </article>
-                <article class="card">
-                    <h3>Secure by default</h3>
-                    <p>Path normalization and content-type handling reduce common risks.</p>
-                </article>
-                <article class="card">
-                    <h3>Responsive</h3>
-                    <p>Built with mobile-first styles that look great on any device.</p>
-                </article>
-            </div>
-        </section>
-
-        <section id="pricing" class="section alt container">
-            <h2 class="section-title">Pricing</h2>
-            <p class="muted">Simple and predictable. Start free — upgrade as you scale.</p>
-            <div class="pricing">
-                <div class="plan">
-                    <h3>Starter</h3>
-                    <p class="price">Free</p>
-                    <ul>
-                        <li>Local development</li>
-                        <li>Static hosting</li>
-                    </ul>
-                    <a class="btn primary" href="#contact">Get Started</a>
-                </div>
-                <div class="plan">
-                    <h3>Pro</h3>
-                    <p class="price">$12 / mo</p>
-                    <ul>
-                        <li>Priority support</li>
-                        <li>Advanced routing</li>
-                    </ul>
-                    <a class="btn ghost" href="#contact">Contact Sales</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section container">
-            <h2 class="section-title">Contact</h2>
-            <form id="contactForm" class="contact-form">
-                <label>
-                    <span>Name</span>
-                    <input name="name" type="text" required>
-                </label>
-                <label>
-                    <span>Email</span>
-                    <input name="email" type="email" required>
-                </label>
-                <label>
-                    <span>Message</span>
-                    <textarea name="message" rows="4"></textarea>
-                </label>
-                <p>
-                    <button type="submit" class="btn primary">Send Message</button>
-                </p>
-                <p id="formStatus" class="muted" aria-live="polite"></p>
-            </form>
-        </section>
+        <footer style="margin-top:2rem;color:#64748b;font-size:0.9rem">© <span id="year">2026</span> Learn In
+            Depth</footer>
     </main>
-
-    <footer class="site-footer">
-        <div class="container">
-            <small>© <span id="year"></span> Robust — Built with Node.js</small>
-        </div>
-    </footer>
-
-    <script src="/script/main.js" defer></script>
+    <script src="/script/about.js" defer></script>
 </body>
 
 </html>

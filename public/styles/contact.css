@@ -1,0 +1,21 @@
+body {
+    background: #fff;
+    margin: 0
+}
+
+main {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px
+}
+
+input,
+textarea {
+    font-family: inherit
+}
+
+@media (max-width:600px) {
+    main {
+        margin: 1rem 0.5rem
+    }
+}
