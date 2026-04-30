@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Launching a Minimal Static Server with Node.js — Robust</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="/">Robust</a>
+            <nav class="nav">
+                <a href="/pages/about.html">About</a>
+                <a href="/pages/docs.html">Docs</a>
+                <a href="/pages/blog/index.html">Blog</a>
+                <a href="/index.html#contact" class="cta">Get Started</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container section">
+        <article class="post">
+            <h1>Launching a Minimal Static Server with Node.js</h1>
+            <p class="muted">Apr 30, 2026 &nbsp;•&nbsp; 3 min read</p>
+            <p>This post walks through a minimal approach: serve files from a <code>/public</code> folder, set
+                content-types, and normalize paths to avoid traversal attacks. The server is intentionally small so you
+                can extend it to add compression, caching, and APIs as needed.</p>
+            <h2>Key points</h2>
+            <ul>
+                <li>Keep the server focused: static assets and simple APIs.</li>
+                <li>Use <code>Cache-Control</code> appropriately for production assets.</li>
+                <li>Add gzip/brotli compression for bandwidth savings.</li>
+            </ul>
+            <p><a class="btn ghost" href="/pages/docs.html">Read docs</a></p>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container"><small>© <span id="year"></span> Robust — Blog</small></div>
+    </footer>
+    <script src="/script/main.js" defer></script>
+</body>
+
+</html>

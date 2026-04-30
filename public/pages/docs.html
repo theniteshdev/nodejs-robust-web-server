@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Docs — Robust</title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="/">Robust</a>
+            <nav class="nav">
+                <a href="/pages/about.html">About</a>
+                <a href="/pages/docs.html">Docs</a>
+                <a href="/pages/blog/index.html">Blog</a>
+                <a href="/index.html#contact" class="cta">Get Started</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container section">
+        <h1 class="section-title">Documentation</h1>
+
+        <section>
+            <h2>Quick start</h2>
+            <ol>
+                <li>Install dependencies (none required for this simple server).</li>
+                <li>Start the server: <code>npm start</code> or <code>node server.js</code></li>
+                <li>Open <a href="/">http://localhost:3000</a> in your browser.</li>
+            </ol>
+        </section>
+
+        <section>
+            <h2>Project layout</h2>
+            <pre>/public
+  /styles
+  /script
+  /pages
+    about.html
+    docs.html
+    /blog
+      index.html
+      post1.html
+index.html
+server.js
+</pre>
+        </section>
+
+        <section>
+            <h2>Contact form</h2>
+            <p>The contact form in the demo only shows client-side feedback. To handle submissions, add a POST endpoint
+                (e.g., <code>/api/contact</code>) and forward messages to email or a queue.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container"><small>© <span id="year"></span> Robust — Docs</small></div>
+    </footer>
+    <script src="/script/main.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Robust — Modern Node.js Landing</title>
+    <meta name="description" content="A clean, responsive landing page served by a small Node.js static server.">
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container">
+            <a class="brand" href="/">Robust</a>
+            <nav class="nav">
+                <a href="/pages/about.html">About</a>
+                <a href="/pages/docs.html">Docs</a>
+                <a href="/pages/blog/index.html">Blog</a>
+                <a href="#contact" class="cta">Get Started</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <h1 class="title">Build fast, reliable Node.js sites</h1>
+                    <p class="subtitle">A minimal, robust server and a modern responsive landing page — no images
+                        required.</p>
+                    <p>
+                        <a class="btn primary" href="#contact">Start Free</a>
+                        <a class="btn ghost" href="#features">Learn More</a>
+                    </p>
+                </div>
+
+                <div class="hero-art" aria-hidden="true">
+                    <!-- Decorative SVG wave -->
+                    <svg viewBox="0 0 600 400" preserveAspectRatio="none" class="wave">
+                        <defs>
+                            <linearGradient id="g" x1="0" x2="1">
+                                <stop offset="0%" stop-color="#6EE7B7" />
+                                <stop offset="100%" stop-color="#3B82F6" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M0,200 C150,300 450,100 600,200 L600,400 L0,400 Z" fill="url(#g)" opacity="0.9" />
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="section container">
+            <h2 class="section-title">Features</h2>
+            <div class="grid">
+                <article class="card">
+                    <h3>Static-first</h3>
+                    <p>Serve fast static assets from a tiny Node.js server with sensible defaults.</p>
+                </article>
+                <article class="card">
+                    <h3>Secure by default</h3>
+                    <p>Path normalization and content-type handling reduce common risks.</p>
+                </article>
+                <article class="card">
+                    <h3>Responsive</h3>
+                    <p>Built with mobile-first styles that look great on any device.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="pricing" class="section alt container">
+            <h2 class="section-title">Pricing</h2>
+            <p class="muted">Simple and predictable. Start free — upgrade as you scale.</p>
+            <div class="pricing">
+                <div class="plan">
+                    <h3>Starter</h3>
+                    <p class="price">Free</p>
+                    <ul>
+                        <li>Local development</li>
+                        <li>Static hosting</li>
+                    </ul>
+                    <a class="btn primary" href="#contact">Get Started</a>
+                </div>
+                <div class="plan">
+                    <h3>Pro</h3>
+                    <p class="price">$12 / mo</p>
+                    <ul>
+                        <li>Priority support</li>
+                        <li>Advanced routing</li>
+                    </ul>
+                    <a class="btn ghost" href="#contact">Contact Sales</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section container">
+            <h2 class="section-title">Contact</h2>
+            <form id="contactForm" class="contact-form">
+                <label>
+                    <span>Name</span>
+                    <input name="name" type="text" required>
+                </label>
+                <label>
+                    <span>Email</span>
+                    <input name="email" type="email" required>
+                </label>
+                <label>
+                    <span>Message</span>
+                    <textarea name="message" rows="4"></textarea>
+                </label>
+                <p>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </p>
+                <p id="formStatus" class="muted" aria-live="polite"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <small>© <span id="year"></span> Robust — Built with Node.js</small>
+        </div>
+    </footer>
+
+    <script src="/script/main.js" defer></script>
+</body>
+
+</html>
